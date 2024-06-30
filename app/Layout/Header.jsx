@@ -16,7 +16,7 @@ const Header = () => {
                 <Link href="/" className="hover:text-primary">Delivery</Link>
             </div>
             <div className="flex items-center gap-8">
-                <div className="relative ">
+                <div className="relative shadow-xl rounded-full">
                     <input type="text" className="rounded-full border border-gray-300 pl-10 px-4 py-3 text-secondary"
                            placeholder="Cappucino"/>
                     <BiSearch className="h-6 w-6 text-secondary absolute top-3.5 left-3"/>
