@@ -6,7 +6,7 @@ import {IoCartOutline} from "react-icons/io5";
 
 const Header = () => {
     return (
-        <div className="w-full flex flex-row items-center justify-between z-[100]">
+        <div className="w-full flex flex-row items-center justify-between z-[100] px-24 py-10">
             <Link href="/">
                 <Image src="/logo.png" width={1100} height={234} alt="logo" className="w-auto h-[30px]"/>
             </Link>
