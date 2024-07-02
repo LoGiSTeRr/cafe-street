@@ -15,18 +15,18 @@ const HomePage = () => {
             <div className="flex flex-col items-center bg-[#F6EBDA] overflow-x-hidden">
                 <section
                     className="bg-[#F6EBDA] w-full h-full flex flex-col lg:flex-row items-center justify-between px-8 py-10 lg:py-16 pt-5 gap-16 lg:gap-20 max-w-7xl mx-auto">
-                    <div className="flex flex-col gap-5">
-                        <div className="text-secondary font-semibold text-[48px]">
-                            <p>
+                    <div className="flex flex-col gap-5 items-center justify-center lg:text-left lg:items-start">
+                        <p className="text-4xl lg:text-6xl text-secondary font-semibold items-center justify-center lg:text-left lg:items-start flex flex-col">
+                            <span>
                                 Enjoy your <span className="text-primary">coffee</span>
-                            </p>
-                            <p>before your activity</p>
-                        </div>
-                        <div className="text-light text-[18px]">
-                            <p>Boost your productivity and build your </p>
-                            <p>mood with a glass of coffee in the morning </p>
-                        </div>
-                        <div className="flex flex-row items-center gap-10">
+                            </span>
+                            <span>Before your activity</span>
+                        </p>
+                        <p className="text-light text-lg items-center justify-center lg:text-left lg:items-start flex flex-col">
+                            <span>Boost your productivity and build your </span>
+                            <span>mood with a glass of coffee in the morning </span>
+                        </p>
+                        <div className="flex flex-row items-center gap-10 ">
                             <div
                                 className="bg-secondary rounded-[20px] h-auto px-10 py-3 flex flex-row items-center justify-center gap-3">
                                 <p className="font-bold text-[14px]">Order now</p>
