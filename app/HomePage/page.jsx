@@ -38,8 +38,11 @@ const HomePage = () => {
                             </div>
                         </div>
                         <div className="relative bg-secondary rounded-full">
+                            <div className="absolute w-full h-full flex justify-center items-center z-[0] rounded-full overflow-hidden">
+                                <Image src="/bg-hero-coffee.png" alt="bg" width={380} height={240} className="w-full h-auto"/>
+                            </div>
                             <Image alt="coffee" src="/hero-coffee.png" width={1000} height={1000}
-                                   className="p-12 w-auto h-[400px]"/>
+                                   className="relative p-12 w-auto h-[400px] z-[10]"/>
                             <div className="absolute bottom-32 right-40 flex justify-center items-center h-full w-full">
                                 <div className="shadow-xl bg-white bg-opacity-50 p-2 rounded-full backdrop-blur-sm">
                                     <div
@@ -75,9 +78,9 @@ const HomePage = () => {
                         <div className="relative bg-[#F9D9AA] rounded-[50px] w-full h-[300px] mx-20">
                             <div
                                 className="absolute bottom-12 inset-x-0 flex flex-row gap-5 items-center justify-center">
-                                <Coffee/>
-                                <Coffee/>
-                                <Coffee/>
+                                <Coffee photo="/latte-coffee.jpg" name="Cappucino" rating={4.8} views={"21K"}/>
+                                <Coffee photo="/espresso.png" name="Espresso" rating={4.8} views={"12K"}/>
+                                <Coffee photo="/hazelnut-latte.png" name="Hazelnut Latte" rating={4.8} views={"23K"}/>
                             </div>
                         </div>
                     </div>
@@ -136,12 +139,12 @@ const HomePage = () => {
                     <p className="text-[32px] text-secondary font-semibold">Special menu <span
                         className="border-b-4 border-b-primary">for you</span></p>
                     <div className="flex flex-wrap w-full h-full items-center justify-center gap-8">
-                        <CoffeeDescription/>
-                        <CoffeeDescription/>
-                        <CoffeeDescription/>
-                        <CoffeeDescription/>
-                        <CoffeeDescription/>
-                        <CoffeeDescription/>
+                        <CoffeeDescription photo="/latte-coffee.jpg" name="Cappucino" description={"bread with meat and vegetables"} rating={4.8} views={"12K"}/>
+                        <CoffeeDescription photo="/latte-coffee.jpg" name="Cappucino" description={"bread with meat and vegetables"} rating={4.8} views={"12K"}/>
+                        <CoffeeDescription photo="/latte-coffee.jpg" name="Cappucino" description={"bread with meat and vegetables"} rating={4.8} views={"12K"}/>
+                        <CoffeeDescription photo="/latte-coffee.jpg" name="Cappucino" description={"bread with meat and vegetables"} rating={4.8} views={"12K"}/>
+                        <CoffeeDescription photo="/latte-coffee.jpg" name="Cappucino" description={"bread with meat and vegetables"} rating={4.8} views={"12K"}/>
+                        <CoffeeDescription photo="/latte-coffee.jpg" name="Cappucino" description={"bread with meat and vegetables"} rating={4.8} views={"12K"}/>
                     </div>
                 </section>
                 <section className="relative flex flex-row w-full h-[400px] mt-36 ">
