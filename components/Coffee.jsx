@@ -9,8 +9,8 @@ const Coffee = ({photo, name, rating, views}) => {
             <div
                 className="bg-white p-5 text-black rounded-2xl w-full h-full flex flex-col items-center justify-center gap-3.5">
                 <Image alt="coffee" width={1500} height={1000} src={photo}
-                       className="rounded-2xl object-cover w-[280px] h-[200px]"/>
-                <p className="text-[24px] w-full flex flex-row items-center justify-between font-semibold">
+                       className="rounded-2xl object-cover w-[210px] h-[150px] lg:w-[270px] lg:h-[190px]"/>
+                <p className="text-[18px] lg:text-[24px] w-full flex flex-row items-center justify-between font-semibold">
                     <span>{name}</span>
                     <span>{views}</span>
                 </p>
@@ -22,7 +22,7 @@ const Coffee = ({photo, name, rating, views}) => {
                     <IoCartOutline className="bg-primary text-white rounded-full text-[38px] p-2"/>
                 </div>
             </div>
-            <div className="absolute bottom-[7.9rem] right-[6.4rem] flex justify-center items-center h-full w-full">
+            <div className="absolute bottom-[6rem] right-[4.2rem] lg:bottom-[7.5rem] lg:right-[6rem] flex justify-center items-center h-full w-full">
                 <div className="bg-white bg-opacity-50 p-1 rounded-full backdrop-blur-sm">
                     <div
                         className="flex items-center gap-1 bg-white text-secondary rounded-full py-1 px-2.5 text-[14px] font-semibold">
