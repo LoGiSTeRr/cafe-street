@@ -14,10 +14,10 @@ const Coffee = ({photo, name, rating, views}) => {
                     <span>{name}</span>
                     <span>{views}</span>
                 </p>
-                <div className="w-full flex flex-row items-center justify-between">
-                    <div className="flex flex-row items-center justify-center gap-5">
-                        <div className="text-primary border-primary rounded-xl border-2 px-5 py-1">Hot</div>
-                        <div className="text-[#FFD28F] border-[#FFD28F] rounded-xl border-2 px-5 py-1">Cold</div>
+                <div className="text-[14px] lg:text-[18px] w-full flex flex-row items-center justify-between">
+                    <div className="flex flex-row items-center justify-center gap-2 lg:gap-5">
+                        <div className="text-primary border-primary rounded-md lg:rounded-xl border-2 px-2 py-1/2 lg:px-5 lg:py-1">Hot</div>
+                        <div className="text-[#FFD28F] border-[#FFD28F] rounded-md lg:rounded-xl border-2 px-2 py-1/2 lg:px-5 lg:py-1">Cold</div>
                     </div>
                     <IoCartOutline className="bg-primary text-white rounded-full text-[38px] p-2"/>
                 </div>
