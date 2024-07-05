@@ -3,11 +3,9 @@ import Image from 'next/image';
 import Layout from "@/app/Layout/Layout";
 import {IoCartOutline} from "react-icons/io5";
 import {FaStar} from "react-icons/fa";
-import Header from "@/app/Layout/Header";
 import Coffee from "@/components/Coffee";
 import CoffeeDescription from "@/components/CoffeeDescription";
 import Feedback from "@/components/Feedback";
-import {BiSearch} from "react-icons/bi";
 
 const HomePage = () => {
     return (
@@ -15,16 +13,12 @@ const HomePage = () => {
             <div className="flex flex-col items-center bg-[#F6EBDA] overflow-x-hidden">
                 <section
                     className="bg-[#F6EBDA] w-full h-full flex flex-col lg:flex-row items-center justify-between px-8 py-10 lg:py-16 pt-5 gap-16 lg:gap-20 max-w-7xl mx-auto">
-                    <div className="flex flex-col gap-5 items-center justify-center lg:text-left lg:items-start">
-                        <p className="text-4xl lg:text-6xl text-secondary font-semibold items-center justify-center lg:text-left lg:items-start flex flex-col">
-                            <span>
-                                Enjoy your <span className="text-primary">coffee</span>
-                            </span>
-                            <span>Before your activity</span>
+                    <div className="lg:w-[50%] flex flex-col gap-5 items-center justify-center lg:text-left lg:items-start">
+                        <p className="text-4xl lg:text-6xl text-secondary font-semibold items-center justify-center lg:text-left lg:items-start text-center">
+                            Enjoy Your <span className="text-primary">Coffee</span> Before Your Activity
                         </p>
-                        <p className="text-light text-lg items-center justify-center lg:text-left lg:items-start flex flex-col">
-                            <span>Boost your productivity and build your </span>
-                            <span>mood with a glass of coffee in the morning </span>
+                        <p className="text-light text-lg items-center justify-center lg:text-left lg:items-start text-center">
+                            Boost your productivity and build your mood with a glass of coffee in the morning
                         </p>
                         <div className="flex flex-row items-center gap-10 ">
                             <div
@@ -42,25 +36,25 @@ const HomePage = () => {
                                    className="w-full h-auto"/>
                         </div>
                         <Image alt="coffee" src="/hero-coffee.png" width={1000} height={1000}
-                               className="relative p-12 w-auto h-[400px] z-[10]"/>
-                        <div className="absolute bottom-32 right-40 flex justify-center items-center h-full w-full">
+                               className="relative p-12 w-auto h-[300px] md:h-[400px] z-[10]"/>
+                        <div className="absolute bottom-24 right-24 md:bottom-32 md:right-40 flex justify-center items-center h-full w-full">
                             <div className="shadow-xl bg-white bg-opacity-50 p-2 rounded-full backdrop-blur-sm">
                                 <div
-                                    className="bg-white text-secondary rounded-full py-1.5 px-10 text-[24px] font-semibold">
+                                    className="bg-white text-secondary rounded-full py-1.5 px-4 md:px-8 text-[18px] md:text-[24px] font-semibold">
                                     <p>Cappuccino</p></div>
                             </div>
                         </div>
-                        <div className="absolute top-32 right-40 flex justify-center items-center h-full w-full">
+                        <div className="absolute top-28 right-24 md:top-32 md:right-40 flex justify-center items-center h-full w-full">
                             <div className="shadow-xl bg-white bg-opacity-50 p-2 rounded-full backdrop-blur-sm">
                                 <div
-                                    className="bg-white text-secondary rounded-full py-1.5 px-10 text-[24px] font-semibold">
+                                    className="bg-white text-secondary rounded-full py-1.5 px-4 md:px-8 text-[18px] md:text-[24px] font-semibold">
                                     <p>18K</p></div>
                             </div>
                         </div>
-                        <div className="absolute bottom-20 left-36 flex justify-center items-center h-full w-full z-[10]">
+                        <div className="absolute bottom-16 left-32 md:bottom-20 md:left-36 flex justify-center items-center h-full w-full z-[10]">
                             <div className="shadow-xl bg-white bg-opacity-50 p-2 rounded-full backdrop-blur-sm">
                                 <div
-                                    className="flex items-center gap-1 bg-white text-secondary rounded-full py-1.5 px-8 text-[24px] font-semibold">
+                                    className="flex items-center gap-1 bg-white text-secondary rounded-full py-1.5 px-4 md:px-8 text-[18px] md:text-[24px] font-semibold">
                                     <p>4.8</p>
                                     <FaStar className="text-primary"/>
                                 </div>
@@ -73,10 +67,10 @@ const HomePage = () => {
                         <p className="text-[36px] text-secondary font-semibold px-24">Popular <span
                             className="border-b-primary border-b-4">Now</span></p>
                     </div>
-                    <div className="absolute inset-x-0 top-52 transform flex items-center justify-center gap-8">
-                        <div className="relative bg-[#F9D9AA] rounded-[50px] w-full h-[300px] mx-20">
+                    <div className="flex items-center justify-center gap-8">
+                        <div className="bg-[#F9D9AA] rounded-[50px] w-full h-auto px-12 py-16 mx-20 -mt-40">
                             <div
-                                className="absolute bottom-12 inset-x-0 flex flex-row gap-5 items-center justify-center">
+                                className="flex flex-wrap gap-5 items-center justify-center -mt-40">
                                 <Coffee photo="/latte-coffee.jpg" name="Cappucino" rating={4.8} views={"21K"}/>
                                 <Coffee photo="/espresso.png" name="Espresso" rating={4.8} views={"12K"}/>
                                 <Coffee photo="/hazelnut-latte.png" name="Hazelnut Latte" rating={4.8} views={"23K"}/>
@@ -84,7 +78,7 @@ const HomePage = () => {
                         </div>
                     </div>
                 </section>
-                <section className="bg-white w-full flex flex-col px-24 py-60 pt-72 gap-14">
+                <section className="bg-white w-full flex flex-col px-24 pb-52 pt-20 gap-14">
                     <p className="text-[32px] text-secondary font-semibold">How to use delivery <span
                         className="border-b-4 border-b-primary">service</span></p>
                     <div className="flex flex-row w-full h-full items-center justify-center gap-28">
