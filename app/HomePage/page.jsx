@@ -14,19 +14,19 @@ const HomePage = () => {
                 <section
                     className="bg-[#F6EBDA] w-full h-full flex flex-col lg:flex-row items-center justify-between px-8 py-10 lg:py-16 pt-5 gap-16 lg:gap-20 max-w-7xl mx-auto">
                     <div className="lg:w-[50%] flex flex-col gap-5 items-center justify-center lg:text-left lg:items-start">
-                        <p className="text-4xl lg:text-6xl text-secondary font-semibold items-center justify-center lg:text-left lg:items-start text-center">
+                        <p className="text-3xl lg:text-6xl text-secondary font-semibold items-center justify-center lg:text-left lg:items-start text-center">
                             Enjoy Your <span className="text-primary">Coffee</span> Before Your Activity
                         </p>
-                        <p className="text-light text-lg items-center justify-center lg:text-left lg:items-start text-center">
+                        <p className="text-light text-sm lg:text-lg items-center justify-center lg:text-left lg:items-start text-center">
                             Boost your productivity and build your mood with a glass of coffee in the morning
                         </p>
                         <div className="flex flex-row items-center gap-10 ">
                             <div
-                                className="bg-secondary rounded-[20px] h-auto px-10 py-3 flex flex-row items-center justify-center gap-3">
-                                <p className="font-bold text-[14px]">Order now</p>
+                                className="bg-secondary rounded-[20px] h-auto px-6 lg:px-10 py-3 flex flex-row items-center justify-center gap-3">
+                                <p className="font-bold text-[10px] lg:text-[14px]">Order now</p>
                                 <IoCartOutline className="bg-primary rounded-full text-[28px] p-1"/>
                             </div>
-                            <p className="text-primary text-[12px] font-bold">More Menu</p>
+                            <p className="text-primary text-[10px] lg:text-[12px] font-bold">More Menu</p>
                         </div>
                     </div>
                     <div className="relative bg-secondary rounded-full">
@@ -64,7 +64,7 @@ const HomePage = () => {
                 </section>
                 <section className="bg-white relative w-full flex flex-col items-center justify-between gap-10">
                     <div className="h-[300px] w-full bg-[#F6EBDA] ">
-                        <p className="text-[36px] text-secondary font-semibold px-24">Popular <span
+                        <p className="text-[28px] md:text-[36px] text-secondary font-semibold px-24 text-center lg:text-start ">Popular <span
                             className="border-b-primary border-b-4">Now</span></p>
                     </div>
                     <div className="flex items-center justify-center gap-8">

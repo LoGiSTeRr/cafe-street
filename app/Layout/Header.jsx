@@ -54,7 +54,7 @@ const Header = () => {
             {/* Mobile menu, show/hide based on menu state. */}
             <div className={`relative z-50 ${isOpen ? "" : "hidden"} lg:hidden`}>
                 <div
-                    className="flex flex-col items-center fixed inset-y-0 right-0 z-10 w-full px-8 py-4 overflow-y-auto bg-accent sm:max-w-sm sm:ring-1 sm:ring-primary/10 transform origin-right transition ease-in-out duration-300">
+                    className="flex flex-col items-center fixed inset-y-0 right-0 z-10 w-full px-8 py-6 overflow-y-auto bg-accent sm:max-w-sm sm:ring-1 sm:ring-primary/10 transform origin-right transition ease-in-out duration-300">
                     <div className="flex items-center justify-between w-full">
                         <Link href="/">
                             <Image src="/logo.png" width={1100} height={234} alt="logo" className="w-auto h-[30px]"/>
