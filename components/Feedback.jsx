@@ -1,12 +1,10 @@
 import React from 'react';
 import Image from "next/image";
-import {IoCartOutline} from "react-icons/io5";
-import {FaStar} from "react-icons/fa";
 
 const Feedback = () => {
     return (
         <div className="relative bg-[#FFCB7C] bg-opacity-50 p-1">
-            <Image src="/man.png" alt="man" width={2500} height={3800} className="w-[190px] h-[260px] object-cover"/>
+            <Image src="/man.png" alt="man" width={2500} height={3800} className="w-[170px] h-[250px] object-cover"/>
             <div className="absolute top-[4rem] left-[2rem] flex justify-center items-center h-full w-full">
                 <div className="bg-[#FFCB7C] bg-opacity-50 p-1 rounded-xl backdrop-blur-sm">
                     <div

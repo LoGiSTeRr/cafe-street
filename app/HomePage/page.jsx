@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import Image from 'next/image';
 import Layout from "@/app/Layout/Layout";
@@ -13,7 +14,8 @@ const HomePage = () => {
             <div className="flex flex-col items-center bg-[#F6EBDA] overflow-x-hidden">
                 <section
                     className="bg-[#F6EBDA] w-full h-full flex flex-col lg:flex-row items-center justify-between px-8 py-10 lg:py-16 pt-5 gap-16 lg:gap-20 max-w-7xl mx-auto">
-                    <div className="lg:w-[50%] flex flex-col gap-5 items-center justify-center lg:text-left lg:items-start">
+                    <div
+                        className="lg:w-[50%] flex flex-col gap-5 items-center justify-center lg:text-left lg:items-start">
                         <p className="text-3xl lg:text-6xl text-secondary font-semibold items-center justify-center lg:text-left lg:items-start text-center">
                             Enjoy Your <span className="text-primary">Coffee</span> Before Your Activity
                         </p>
@@ -37,21 +39,24 @@ const HomePage = () => {
                         </div>
                         <Image alt="coffee" src="/hero-coffee.png" width={1000} height={1000}
                                className="relative p-12 w-auto h-[300px] md:h-[400px] z-[10]"/>
-                        <div className="absolute bottom-24 right-24 md:bottom-32 md:right-40 flex justify-center items-center h-full w-full">
+                        <div
+                            className="absolute bottom-24 right-24 md:bottom-32 md:right-40 flex justify-center items-center h-full w-full">
                             <div className="shadow-xl bg-white bg-opacity-50 p-2 rounded-full backdrop-blur-sm">
                                 <div
                                     className="bg-white text-secondary rounded-full py-1.5 px-4 md:px-8 text-[18px] md:text-[24px] font-semibold">
                                     <p>Cappuccino</p></div>
                             </div>
                         </div>
-                        <div className="absolute top-28 right-24 md:top-32 md:right-40 flex justify-center items-center h-full w-full">
+                        <div
+                            className="absolute top-28 right-24 md:top-32 md:right-40 flex justify-center items-center h-full w-full">
                             <div className="shadow-xl bg-white bg-opacity-50 p-2 rounded-full backdrop-blur-sm">
                                 <div
                                     className="bg-white text-secondary rounded-full py-1.5 px-4 md:px-8 text-[18px] md:text-[24px] font-semibold">
                                     <p>18K</p></div>
                             </div>
                         </div>
-                        <div className="absolute bottom-16 left-32 md:bottom-20 md:left-36 flex justify-center items-center h-full w-full z-[10]">
+                        <div
+                            className="absolute bottom-16 left-32 md:bottom-20 md:left-36 flex justify-center items-center h-full w-full z-[10]">
                             <div className="shadow-xl bg-white bg-opacity-50 p-2 rounded-full backdrop-blur-sm">
                                 <div
                                     className="flex items-center gap-1 bg-white text-secondary rounded-full py-1.5 px-4 md:px-8 text-[18px] md:text-[24px] font-semibold">
@@ -79,8 +84,9 @@ const HomePage = () => {
                     </div>
                 </section>
                 <section className="bg-white w-full flex flex-col pb-52 pt-20 gap-14 mx-auto px-8">
-                    <p className="text-[28px] md:text-[36px] text-secondary font-semibold text-center lg:text-start max-w-7xl mx-auto px-8 w-full">How to use delivery <span
-                        className="border-b-4 border-b-primary">service</span></p>
+                    <p className="text-[28px] md:text-[36px] text-secondary font-semibold text-center lg:text-start max-w-7xl mx-auto px-8 w-full">How
+                        to use delivery <span
+                            className="border-b-4 border-b-primary">service</span></p>
                     <div className="flex flex-wrap w-full h-full items-center justify-center gap-28 text-center">
                         <div className="flex flex-col text-secondary items-center justify-center">
                             <Image src="/coffee-cup.png" alt="coffee" width={512} height={512} className="w-36 h-auto"/>
@@ -105,7 +111,8 @@ const HomePage = () => {
                     backgroundSize: `cover`,
                     backgroundPosition: `center`
                 }} className="w-full h-full bg-white flex lg:flex-row flex-col items-center justify-center ">
-                    <div className="w-full flex lg:flex-row flex-col items-center justify-center px-8 py-16 gap-10 lg:gap-20 max-w-7xl mx-auto">
+                    <div
+                        className="w-full flex lg:flex-row flex-col items-center justify-center px-8 py-16 gap-10 lg:gap-20 max-w-7xl mx-auto">
                         <div className="bg-white bg-opacity-50 p-1.5 rounded-2xl">
                             <Image alt="coffee" src="/coffee.png" width={512} height={512}
                                    className="w-[350px] h-auto rounded-2xl -mt-[10.5rem]"/>
@@ -148,38 +155,42 @@ const HomePage = () => {
                                            description={"Waffle with ice cream"} rating={4.8} views={"12K"}/>
                     </div>
                 </section>
-                <section className="bg-white relative flex flex-row w-full h-[500px] py-14 items-center">
+                <section className="bg-white relative flex flex-row w-full h-auto lg:h-[500px] py-14 items-center ">
                     <div style={{
                         backgroundImage: `url(/bg-coffees.png)`,
                         backgroundSize: `cover`,
                         backgroundPosition: `center`
-                    }} className="rounded-r-2xl w-[65%] h-full"></div>
-                    <div className="w-[35%} h-full bg-white"></div>
-                    <div className="absolute flex flex-row items-center justify-center w-full h-full gap-10">
-                        <div className="flex flex-col justify-center gap-4">
-                            <p className="text-secondary text-[32px] font-semibold">What they say about us</p>
-                            <p className="text-light text-[18px] w-[280px]">We always provide the best service and
-                                always maintain the quality of coffee</p>
-                        </div>
-                        <div className="flex flex-row gap-16">
-                            <Feedback/>
-                            <Feedback/>
-                            <Feedback/>
+                    }} className="rounded-r-2xl w-full lg:w-[70%] h-auto lg:h-[500px]">
+                        <div
+                            className="relative lg:absolute flex flex-col lg:flex-row items-center justify-center w-full h-full gap-10 px-10 py-10">
+                            <div
+                                className="flex flex-col justify-center gap-4 text-center lg:text-start w-full lg:w-[40%]">
+                                <p className="text-secondary text-[32px] font-semibold">What they say about us</p>
+                                <p className="text-light text-[18px]">We always provide the best service and always
+                                    maintain the quality of coffee</p>
+                            </div>
+                            <div className="flex flex-wrap lg:flex-row gap-16 items-center justify-center">
+                                <Feedback/>
+                                <Feedback/>
+                                <Feedback/>
+                            </div>
                         </div>
                     </div>
+                    <div className="hidden lg:flex lg:w-[30%} h-full bg-white"></div>
                 </section>
-                <section className="bg-white w-full flex flex-col p-24 gap-14">
+
+                <section className="bg-white w-full flex flex-col lg:py-24 lg:px-24 px-0 gap-14">
                     <div style={{
                         backgroundImage: `url(/coffee-giver.png)`,
                         backgroundSize: `cover`,
                         backgroundPosition: `center`
-                    }} className="w-full h-[400px] rounded-2xl">
+                    }} className="w-full h-[400px] lg:rounded-2xl">
                         <div
                             className="w-full h-full flex flex-col items-center justify-center rounded-2xl bg-black bg-opacity-40 gap-8">
-                            <p className="text-white text-[32px] font-semibold">Subscribe to get 50% discount price</p>
+                            <p className="text-white text-[26px] lg:text-[32px] font-semibold lg:text-start text-center">Subscribe to get 50% discount price</p>
                             <div className="relative shadow-xl rounded-full">
-                                <input type="text"
-                                       className="rounded-full px-4 py-3 pr-48 text-light"
+                            <input type="text"
+                                       className="rounded-full px-4 py-3 lg:pr-48 pr-24 text-light"
                                        placeholder="Email address"/>
                                 <div
                                     className="text-secondary bg-secondary absolute top-1.5 right-1.5 py-2 px-5 rounded-full">
