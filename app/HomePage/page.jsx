@@ -62,9 +62,9 @@ const HomePage = () => {
                         </div>
                     </div>
                 </section>
-                <section className="bg-white relative w-full flex flex-col items-center justify-between gap-10">
-                    <div className="h-[300px] w-full bg-[#F6EBDA] ">
-                        <p className="text-[28px] md:text-[36px] text-secondary font-semibold px-24 text-center lg:text-start ">Popular <span
+                <section className="bg-white relative w-full flex flex-col items-center justify-between gap-10 mx-auto">
+                    <div className="h-[300px] w-full bg-[#F6EBDA]">
+                        <p className="text-[28px] md:text-[36px] text-secondary font-semibold text-center lg:text-start px-8 max-w-7xl mx-auto">Popular <span
                             className="border-b-primary border-b-4">Now</span></p>
                     </div>
                     <div className="flex items-center justify-center gap-8">
@@ -78,10 +78,10 @@ const HomePage = () => {
                         </div>
                     </div>
                 </section>
-                <section className="bg-white w-full flex flex-col px-24 pb-52 pt-20 gap-14">
-                    <p className="text-[26px] md:text-[36px] text-secondary font-semibold text-center sm:text-start">How to use delivery <span
+                <section className="bg-white w-full flex flex-col pb-52 pt-20 gap-14 mx-auto px-8">
+                    <p className="text-[28px] md:text-[36px] text-secondary font-semibold text-center lg:text-start max-w-7xl mx-auto px-8 w-full">How to use delivery <span
                         className="border-b-4 border-b-primary">service</span></p>
-                    <div className="flex flex-col md:flex-row w-full h-full items-center justify-center gap-28 text-center">
+                    <div className="flex flex-wrap w-full h-full items-center justify-center gap-28 text-center">
                         <div className="flex flex-col text-secondary items-center justify-center">
                             <Image src="/coffee-cup.png" alt="coffee" width={512} height={512} className="w-36 h-auto"/>
                             <p className="font-semibold text-[20px] md:text-[24px] mt-6">choose your coffee</p>
@@ -104,33 +104,36 @@ const HomePage = () => {
                     backgroundImage: `url(/bg-coffees.png)`,
                     backgroundSize: `cover`,
                     backgroundPosition: `center`
-                }}
-                         className="w-full bg-white flex lg:flex-row flex-col items-center justify-center px-10 sm:px-24 py-16 gap-10 lg:gap-20">
-                    <div className="bg-white bg-opacity-50 p-1.5 rounded-2xl">
-                        <Image alt="coffee" src="/coffee.png" width={512} height={512}
-                               className="w-[350px] h-auto rounded-2xl -mt-[10.5rem]"/>
-                    </div>
-                    <div className="flex flex-col gap-6 lg:text-start text-center items-center lg:items-start w-[90%] lg:w-[60%]">
-                        <p className="text-secondary text-[32px] font-semibold">About <span
-                            className="border-b-primary border-b-4">us</span></p>
-                        <p className="text-secondary text-[24px] font-semibold">
-                            We provide quality coffee, and ready to deliver.
-                        </p>
-                        <p className="text-light text-[18px] font-semibold ">
-                            We are a company that makes and distributes
-                            delicious drinks. our main product is made with a
-                            secret recipe and available in stores worldwide.
-                        </p>
-                        <div className="bg-secondary rounded-[20px] px-10 py-3 flex items-center"
-                             style={{width: 'fit-content'}}>
-                            <p className="font-bold text-[12px] text-primary">Get your coffee</p>
+                }} className="w-full h-full bg-white flex lg:flex-row flex-col items-center justify-center ">
+                    <div className="w-full flex lg:flex-row flex-col items-center justify-center px-8 py-16 gap-10 lg:gap-20 max-w-7xl mx-auto">
+                        <div className="bg-white bg-opacity-50 p-1.5 rounded-2xl">
+                            <Image alt="coffee" src="/coffee.png" width={512} height={512}
+                                   className="w-[350px] h-auto rounded-2xl -mt-[10.5rem]"/>
+                        </div>
+                        <div
+                            className="flex flex-col gap-6 lg:text-start text-center items-center lg:items-start w-[90%] lg:w-[60%]">
+                            <p className="text-secondary text-[32px] font-semibold">About <span
+                                className="border-b-primary border-b-4">us</span></p>
+                            <p className="text-secondary text-[24px] font-semibold">
+                                We provide quality coffee, and ready to deliver.
+                            </p>
+                            <p className="text-light text-[18px] font-semibold ">
+                                We are a company that makes and distributes
+                                delicious drinks. our main product is made with a
+                                secret recipe and available in stores worldwide.
+                            </p>
+                            <div className="bg-secondary rounded-[20px] px-10 py-3 flex items-center"
+                                 style={{width: 'fit-content'}}>
+                                <p className="font-bold text-[12px] text-primary">Get your coffee</p>
+                            </div>
                         </div>
                     </div>
                 </section>
                 <section className="bg-white w-full flex flex-col items-center px-24 py-20 gap-14">
-                    <p className="text-[28px] md:text-[36px] text-center md:text-start text-secondary font-semibold">Special menu <span
-                        className="border-b-4 border-b-primary">for you</span></p>
-                    <div className="flex flex-wrap w-full h-full items-center justify-center gap-8">
+                    <p className="text-[28px] md:text-[36px] text-center md:text-start text-secondary font-semibold max-w-7xl mx-auto w-full">Special
+                        menu <span
+                            className="border-b-4 border-b-primary">for you</span></p>
+                    <div className="flex flex-wrap w-full h-full items-center justify-center gap-8 max-w-7xl mx-auto">
                         <CoffeeDescription photo="/sandwich.png" name="Sandwich"
                                            description={"bread with meat and vegetables"} rating={4.8} views={"12K"}/>
                         <CoffeeDescription photo="/hot-milk.png" name="Hot Milk"
