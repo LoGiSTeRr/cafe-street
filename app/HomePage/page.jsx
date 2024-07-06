@@ -68,7 +68,7 @@ const HomePage = () => {
                             className="border-b-primary border-b-4">Now</span></p>
                     </div>
                     <div className="flex items-center justify-center gap-8">
-                        <div className="bg-[#F9D9AA] rounded-[50px] w-full h-auto px-12 py-16 mx-20 -mt-40">
+                        <div className="bg-[#F9D9AA] rounded-[50px] w-full h-auto px-12 p-16 mx-20 -mt-40">
                             <div
                                 className="flex flex-wrap gap-5 items-center justify-center -mt-40">
                                 <Coffee photo="/latte-coffee.jpg" name="Cappucino" rating={4.8} views={"21K"}/>
