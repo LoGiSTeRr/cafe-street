@@ -68,7 +68,7 @@ const HomePage = () => {
                             className="border-b-primary border-b-4">Now</span></p>
                     </div>
                     <div className="flex items-center justify-center gap-8">
-                        <div className="bg-[#F9D9AA] rounded-[50px] w-full h-auto px-12 p-16 mx-20 -mt-40">
+                        <div className="bg-[#F9D9AA] rounded-[50px] w-full h-auto px-12 p-16 mx-5 sm:mx-20 -mt-40">
                             <div
                                 className="flex flex-wrap gap-5 items-center justify-center -mt-40">
                                 <Coffee photo="/latte-coffee.jpg" name="Cappucino" rating={4.8} views={"21K"}/>
@@ -79,24 +79,24 @@ const HomePage = () => {
                     </div>
                 </section>
                 <section className="bg-white w-full flex flex-col px-24 pb-52 pt-20 gap-14">
-                    <p className="text-[32px] text-secondary font-semibold">How to use delivery <span
+                    <p className="text-[26px] md:text-[36px] text-secondary font-semibold text-center sm:text-start">How to use delivery <span
                         className="border-b-4 border-b-primary">service</span></p>
-                    <div className="flex flex-row w-full h-full items-center justify-center gap-28">
+                    <div className="flex flex-col md:flex-row w-full h-full items-center justify-center gap-28 text-center">
                         <div className="flex flex-col text-secondary items-center justify-center">
                             <Image src="/coffee-cup.png" alt="coffee" width={512} height={512} className="w-36 h-auto"/>
-                            <p className="font-semibold text-[24px] mt-6">choose your coffee</p>
-                            <p className="text-[18px]">there are 20+ coffees for you</p>
+                            <p className="font-semibold text-[20px] md:text-[24px] mt-6">choose your coffee</p>
+                            <p className="text-[14px] md:text-[18px]">there are 20+ coffees for you</p>
                         </div>
                         <div className="flex flex-col text-secondary items-center justify-center">
                             <Image src="/food-truck.png" alt="coffee" width={512} height={512} className="w-36 h-auto"/>
-                            <p className="font-semibold text-[24px] mt-6">we deliver it to you</p>
-                            <p className="text-[18px]">Choose delivery service</p>
+                            <p className="font-semibold text-[20px] md:text-[24px] mt-6">we deliver it to you</p>
+                            <p className="text-[14px] md:text-[18px]">Choose delivery service</p>
                         </div>
                         <div className="flex flex-col text-secondary items-center justify-center">
                             <Image src="/coffee-cup2.png" alt="coffee" width={512} height={512}
                                    className="w-36 h-auto"/>
-                            <p className="font-semibold text-[24px] mt-6">Enjoy your coffee</p>
-                            <p className="text-[18px]">Choose delivery service</p>
+                            <p className="font-semibold text-[20px] md:text-[24px] mt-6">Enjoy your coffee</p>
+                            <p className="text-[14px] md:text-[18px]">Choose delivery service</p>
                         </div>
                     </div>
                 </section>
@@ -105,22 +105,21 @@ const HomePage = () => {
                     backgroundSize: `cover`,
                     backgroundPosition: `center`
                 }}
-                         className="w-full bg-white flex flex-row items-center justify-center px-24 py-16 gap-20">
+                         className="w-full bg-white flex lg:flex-row flex-col items-center justify-center px-10 sm:px-24 py-16 gap-10 lg:gap-20">
                     <div className="bg-white bg-opacity-50 p-1.5 rounded-2xl">
                         <Image alt="coffee" src="/coffee.png" width={512} height={512}
                                className="w-[350px] h-auto rounded-2xl -mt-[10.5rem]"/>
                     </div>
-                    <div className="flex flex-col gap-6">
+                    <div className="flex flex-col gap-6 lg:text-start text-center items-center lg:items-start w-[90%] lg:w-[60%]">
                         <p className="text-secondary text-[32px] font-semibold">About <span
                             className="border-b-primary border-b-4">us</span></p>
-                        <p className="text-secondary text-[24px] font-semibold flex flex-col">
-                            <span>We provide quality coffee,</span>
-                            <span>and ready to deliver.</span>
+                        <p className="text-secondary text-[24px] font-semibold">
+                            We provide quality coffee, and ready to deliver.
                         </p>
-                        <p className="text-light text-[18px] font-semibold flex flex-col">
-                            <span>We are a company that makes and distributes </span>
-                            <span>delicious drinks. our main product is made with a </span>
-                            <span>secret recipe and available in stores worldwide.</span>
+                        <p className="text-light text-[18px] font-semibold ">
+                            We are a company that makes and distributes
+                            delicious drinks. our main product is made with a
+                            secret recipe and available in stores worldwide.
                         </p>
                         <div className="bg-secondary rounded-[20px] px-10 py-3 flex items-center"
                              style={{width: 'fit-content'}}>
@@ -128,8 +127,8 @@ const HomePage = () => {
                         </div>
                     </div>
                 </section>
-                <section className="bg-white w-full flex flex-col px-24 py-20 gap-14">
-                    <p className="text-[32px] text-secondary font-semibold">Special menu <span
+                <section className="bg-white w-full flex flex-col items-center px-24 py-20 gap-14">
+                    <p className="text-[28px] md:text-[36px] text-center md:text-start text-secondary font-semibold">Special menu <span
                         className="border-b-4 border-b-primary">for you</span></p>
                     <div className="flex flex-wrap w-full h-full items-center justify-center gap-8">
                         <CoffeeDescription photo="/latte-coffee.jpg" name="Cappucino"

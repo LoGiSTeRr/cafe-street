@@ -22,7 +22,7 @@ const Coffee = ({photo, name, rating, views}) => {
                     <IoCartOutline className="bg-primary text-white rounded-full text-[38px] ml-4 sm:ml-0 p-2"/>
                 </div>
             </div>
-            <div className="absolute bottom-[6rem] right-[2.3rem] xs:right-[4.2rem] lg:bottom-[7.5rem] lg:right-[6rem] flex justify-center items-center h-full w-full">
+            <div className="absolute bottom-[6rem] right-[4.2rem] lg:bottom-[7.5rem] lg:right-[6rem] flex justify-center items-center h-full w-full">
                 <div className="bg-white bg-opacity-50 p-1 rounded-full backdrop-blur-sm">
                     <div
                         className="flex items-center gap-1 bg-white text-secondary rounded-full py-1 px-2.5 text-[14px] font-semibold">

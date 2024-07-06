@@ -10,16 +10,16 @@ const CoffeeDescription = ({photo, name, description, rating, views}) => {
                 className="bg-white p-5 text-black rounded-2xl w-full h-full flex flex-col items-center justify-center gap-3.5">
                 <Image alt="coffee" width={1500} height={1000} src={photo}
                        className="rounded-2xl object-cover w-[280px] h-[200px]"/>
-                <p className="text-[24px] w-full flex flex-row items-center justify-between font-semibold">
+                <p className="text-[22px] sm:text-[24px] w-full flex flex-row items-center justify-between font-semibold">
                     <span>{name}</span>
                     <span>{views}</span>
                 </p>
                 <div className="w-full flex flex-row items-center justify-between">
-                    <p className="text-[14px] text-light w-[200px] font-semibold">{description}</p>
+                    <p className="text-[12px] sm:text-[14px] text-light w-[200px] font-semibold">{description}</p>
                     <IoCartOutline className="bg-primary text-white rounded-full text-[38px] p-2"/>
                 </div>
             </div>
-            <div className="absolute bottom-[7.9rem] right-[6.4rem] flex justify-center items-center h-full w-full">
+            <div className="absolute bottom-[7.9rem] right-[5rem] xs:right-[6.4rem] flex justify-center items-center h-full w-full">
                 <div className="bg-white bg-opacity-50 p-1 rounded-full backdrop-blur-sm">
                     <div
                         className="flex items-center gap-1 bg-white text-secondary rounded-full py-1 px-2.5 text-[14px] font-semibold">
