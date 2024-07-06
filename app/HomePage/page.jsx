@@ -131,18 +131,18 @@ const HomePage = () => {
                     <p className="text-[28px] md:text-[36px] text-center md:text-start text-secondary font-semibold">Special menu <span
                         className="border-b-4 border-b-primary">for you</span></p>
                     <div className="flex flex-wrap w-full h-full items-center justify-center gap-8">
-                        <CoffeeDescription photo="/latte-coffee.jpg" name="Cappucino"
+                        <CoffeeDescription photo="/sandwich.png" name="Sandwich"
                                            description={"bread with meat and vegetables"} rating={4.8} views={"12K"}/>
-                        <CoffeeDescription photo="/latte-coffee.jpg" name="Cappucino"
-                                           description={"bread with meat and vegetables"} rating={4.8} views={"12K"}/>
-                        <CoffeeDescription photo="/latte-coffee.jpg" name="Cappucino"
-                                           description={"bread with meat and vegetables"} rating={4.8} views={"12K"}/>
-                        <CoffeeDescription photo="/latte-coffee.jpg" name="Cappucino"
-                                           description={"bread with meat and vegetables"} rating={4.8} views={"12K"}/>
-                        <CoffeeDescription photo="/latte-coffee.jpg" name="Cappucino"
-                                           description={"bread with meat and vegetables"} rating={4.8} views={"12K"}/>
-                        <CoffeeDescription photo="/latte-coffee.jpg" name="Cappucino"
-                                           description={"bread with meat and vegetables"} rating={4.8} views={"12K"}/>
+                        <CoffeeDescription photo="/hot-milk.png" name="Hot Milk"
+                                           description={"Hot Milk with less sugar"} rating={4.8} views={"12K"}/>
+                        <CoffeeDescription photo="/coffee-ice-cream.jpg" name="Coffe Ice Cream"
+                                           description={"Coffee with ice cream vanilla"} rating={4.8} views={"12K"}/>
+                        <CoffeeDescription photo="/cappuccino.png" name="Cappuccino"
+                                           description={"Hot Cappuccino"} rating={4.8} views={"12K"}/>
+                        <CoffeeDescription photo="/moccacinno.jpg" name="Moccacinno"
+                                           description={"Hot Moccacinno"} rating={4.8} views={"12K"}/>
+                        <CoffeeDescription photo="/waffle.png" name="Waffle Ice Cream"
+                                           description={"Waffle with ice cream"} rating={4.8} views={"12K"}/>
                     </div>
                 </section>
                 <section className="bg-white relative flex flex-row w-full h-[500px] py-14 items-center">
