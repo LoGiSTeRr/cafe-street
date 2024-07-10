@@ -18,12 +18,12 @@ const Header = () => {
 
     return (
         <header>
-            <nav className="container w-full flex flex-row items-center justify-between z-[100] px-8 py-6 mx-auto">
+            <nav className="bg-[#F6EBDA] container w-full flex flex-row items-center justify-between z-[100] px-8 py-6 mx-auto">
                 <Link href="/">
                     <Image src="/logo.png" width={1100} height={234} alt="logo" className="w-auto h-[30px]"/>
                 </Link>
                 <div className="hidden lg:flex text-secondary flex-row gap-5 items-center justify-center">
-                    <Link href="/" className="hover:text-primary">About Us</Link>
+                    <Link href="/AboutUs" className="hover:text-primary">About us</Link>
                     <Link href="/" className="hover:text-primary">Our Product</Link>
                     <Link href="/" className="hover:text-primary">Delivery</Link>
                 </div>
@@ -68,7 +68,7 @@ const Header = () => {
                     </div>
 
                     <div className="flex flex-col text-secondary gap-y-4 mt-6 items-center justify-center">
-                        <Link href="/" className="hover:text-primary">About Us</Link>
+                        <Link href="/AboutUs" className="hover:text-primary">About Us</Link>
                         <Link href="/" className="hover:text-primary">Our Product</Link>
                         <Link href="/" className="hover:text-primary">Delivery</Link>
                     </div>
