@@ -18,7 +18,7 @@ const Header = () => {
 
     return (
         <header>
-            <nav className="bg-[#F6EBDA] container w-full flex flex-row items-center justify-between z-[100] px-8 py-6 mx-auto">
+            <nav className="container w-full flex flex-row items-center justify-between z-[100] px-8 py-6 mx-auto">
                 <Link href="/">
                     <Image src="/logo.png" width={1100} height={234} alt="logo" className="w-auto h-[30px]"/>
                 </Link>

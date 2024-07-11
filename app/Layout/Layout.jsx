@@ -2,9 +2,9 @@ import React from 'react';
 import Header from "@/app/Layout/Header";
 import Footer from "@/app/Layout/Footer";
 
-const Layout = ({children}) => {
+const Layout = ({children, className}) => {
     return (
-        <div>
+        <div className={className}>
             <Header/>
             {children}
             <Footer/>
