@@ -165,14 +165,19 @@ const HomePage = () => {
                             className="relative lg:absolute flex flex-col lg:flex-row items-center justify-center w-full h-full gap-10 px-10 py-10">
                             <div
                                 className="flex flex-col justify-center gap-4 text-center lg:text-start w-full lg:w-[40%]">
-                                <p className="text-secondary text-[32px] font-semibold">What they say about us</p>
-                                <p className="text-light text-[18px]">We always provide the best service and always
+                                <p className="text-secondary text-[32px] lg:text-[35px] font-semibold">What they say
+                                    about us</p>
+                                <p className="text-light text-[18px] lg:text-[21px]">We always provide the best service
+                                    and always
                                     maintain the quality of coffee</p>
                             </div>
                             <div className="flex flex-wrap lg:flex-row gap-16 items-center justify-center">
-                                <Feedback/>
-                                <Feedback/>
-                                <Feedback/>
+                                <Feedback image={"/man.png"} name="John"
+                                          text="Every day starts with a cup of your aromatic coffee. It's the best wake-up call for my senses!"/>
+                                <Feedback image={"/woman.jpg"} name="Jane"
+                                          text="The smooth taste and strong kick of caffeine from your coffee truly brightens up my day."/>
+                                <Feedback image={"/man2.jpg"} name="Chris"
+                                          text="Coffee from your shop has become my daily routine. Can't imagine my day without it!"/>
                             </div>
                         </div>
                     </div>
@@ -187,9 +192,10 @@ const HomePage = () => {
                     }} className="w-full h-[400px] lg:rounded-2xl">
                         <div
                             className="w-full h-full flex flex-col items-center justify-center rounded-2xl bg-black bg-opacity-40 gap-8">
-                            <p className="text-white text-[26px] lg:text-[32px] font-semibold lg:text-start text-center">Subscribe to get 50% discount price</p>
+                            <p className="text-white text-[26px] lg:text-[32px] font-semibold lg:text-start text-center">Subscribe
+                                to get 50% discount price</p>
                             <div className="relative shadow-xl rounded-full">
-                            <input type="text"
+                                <input type="text"
                                        className="rounded-full px-4 py-3 lg:pr-48 pr-24 text-light"
                                        placeholder="Email address"/>
                                 <div
