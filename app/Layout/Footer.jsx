@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className="w-full h-full flex flex-col items-center justify-center">
             <div
-                className="bg-[#F6EBDA] w-full h-full flex flex-wrap lg:flex-row lg:items-start lg:text-start justify-center text-center items-center lg:justify-between px-8 py-10 lg:py-16 pt-5 gap-16 lg:gap-20 max-w-7xl mx-auto">
+                className="bg-[#F6EBDA] w-full h-full flex flex-wrap lg:flex-row items-start lg:text-start justify-center text-center lg:justify-between px-8 py-10 lg:py-16 pt-5 gap-16 lg:gap-20 max-w-7xl mx-auto">
                 <div className="flex flex-col text-[18px] text-light gap-2">
                     <Link href="/AboutUs" className="font-bold text-[20px] text-secondary">About us</Link>
                     <Link href="/Contact">Find a location</Link>
@@ -18,7 +18,6 @@ const Footer = () => {
                     <Link href="/Contact">Contact</Link>
                     <Link href="/#menu">Menu</Link>
                 </div>
-
                 <div className="flex flex-col text-[18px] text-light gap-2">
                     <Link href="/" className="font-bold text-[20px] text-secondary">Privacy</Link>
                     <Link href="/">Terms of use</Link>

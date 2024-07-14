@@ -16,9 +16,9 @@ const AboutUs = () => {
                     className="bg-[#F6EBDA] w-full h-full flex flex-col lg:flex-row items-center justify-between px-8 py-10 lg:py-12 pt-5 gap-16 lg:gap-20 max-w-7xl mx-auto">
                     <motion.div initial={{opacity: 0, y: 100}} animate={{opacity: 1, y: 0}}
                                 transition={{duration: 1}}
-                                className="lg:w-[45%] w-[70%] bg-white bg-opacity-65 p-2.5 rounded-2xl">
+                                className="lg:w-[45%] w-full h-auto bg-white bg-opacity-65 p-2.5 rounded-2xl">
                         <Image alt="coffee" src="/aboutus-bg.jpg" width={512} height={512}
-                               className="w-full h-auto rounded-2xl"/>
+                               className="w-full lg:h-auto h-[550px] rounded-2xl object-cover"/>
                     </motion.div>
                     <motion.div initial={{opacity: 0, y: 100}} animate={{opacity: 1, y: 0}}
                                 transition={{duration: 1}}
