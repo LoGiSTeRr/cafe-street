@@ -1,12 +1,12 @@
+'use client'
 import React from 'react';
 import Layout from "@/app/Layout/Layout";
 import Image from "next/image";
-import {IoCartOutline, IoFastFoodOutline} from "react-icons/io5";
-import Coffee from "@/components/Coffee";
-import {BiDish} from "react-icons/bi";
+import {IoFastFoodOutline} from "react-icons/io5";
 import {GiCroissant} from "react-icons/gi";
 import {FaCoffee} from "react-icons/fa";
 import {WiDaySunny} from "react-icons/wi";
+import {motion} from "framer-motion";
 
 const AboutUs = () => {
     return (
@@ -14,12 +14,15 @@ const AboutUs = () => {
             <div className="flex flex-col items-center bg-[#F6EBDA] overflow-x-hidden">
                 <section
                     className="bg-[#F6EBDA] w-full h-full flex flex-col lg:flex-row items-center justify-between px-8 py-10 lg:py-12 pt-5 gap-16 lg:gap-20 max-w-7xl mx-auto">
-                    <div className="lg:w-[45%] w-[70%] bg-white bg-opacity-65 p-2.5 rounded-2xl">
+                    <motion.div initial={{opacity: 0, y: 100}} animate={{opacity: 1, y: 0}}
+                                transition={{duration: 1}}
+                                className="lg:w-[45%] w-[70%] bg-white bg-opacity-65 p-2.5 rounded-2xl">
                         <Image alt="coffee" src="/aboutus-bg.jpg" width={512} height={512}
                                className="w-full h-auto rounded-2xl"/>
-                    </div>
-                    <div
-                        className="lg:w-[50%] w-full flex flex-col gap-5 items-center justify-center lg:text-left lg:items-start">
+                    </motion.div>
+                    <motion.div initial={{opacity: 0, y: 100}} animate={{opacity: 1, y: 0}}
+                                transition={{duration: 1}}
+                                className="lg:w-[50%] w-full flex flex-col gap-5 items-center justify-center lg:text-left lg:items-start">
                         <h1 className="text-3xl lg:text-6xl text-secondary font-semibold items-center justify-center lg:text-left lg:items-start text-center">
                             About us
                         </h1>
@@ -37,10 +40,10 @@ const AboutUs = () => {
                                 <p className="font-bold text-[10px] lg:text-[14px]">Delivery</p>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </section>
-                <section
-                    className="bg-[#F6EBDA] w-full h-full flex flex-wrap lg:flex-row items-center justify-center">
+                <section ref={section2Ref}
+                         className="bg-[#F6EBDA] w-full h-full flex flex-wrap lg:flex-row items-center justify-center">
                     <div style={{
                         backgroundImage: `url(/cozy.jpg)`,
                         backgroundSize: `cover`,
@@ -80,8 +83,8 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </section>
-                <section
-                    className="bg-[#F6EBDA] w-full h-full">
+                <section ref={section3Ref}
+                         className="bg-[#F6EBDA] w-full h-full">
                     <div
                         className="flex flex-col items-center justify-center gap-5 px-8 py-16 lg:py-24 pt-5 max-w-7xl mx-auto">
                         <h2 className="text-4xl lg:text-6xl text-secondary font-semibold items-center justify-center lg:text-left lg:items-start text-center">
@@ -95,7 +98,8 @@ const AboutUs = () => {
                             <Image src="/dashed-line.png" alt="line" width={300} height={60} className="w-auto h-[35px]"
                                    style={{transform: "scaleX(-1)"}}/>
                         </div>
-                        <p className="text-secondary text-sm lg:text-xl items-center justify-center lg:items-start text-center max-w-4xl mx-auto" style={{lineHeight: "2"}}>
+                        <p className="text-secondary text-sm lg:text-xl items-center justify-center lg:items-start text-center max-w-4xl mx-auto"
+                           style={{lineHeight: "2"}}>
                             Our story began in the vibrant city of Portland, Oregon. It was there, in that city full of
                             coffee-enthusiasts, that we discovered the true power and potential of a humble coffee bean.
                             From the moment we served our first hand-crafted brew, we knew we were onto something

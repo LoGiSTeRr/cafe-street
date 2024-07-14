@@ -6,6 +6,7 @@ import {BiSearch} from "react-icons/bi";
 import {IoCartOutline} from "react-icons/io5";
 import {AiOutlineMenu} from "react-icons/ai";
 import {IoMdClose} from "react-icons/io";
+import {motion} from "framer-motion";
 
 const Header = () => {
 
@@ -18,7 +19,9 @@ const Header = () => {
 
     return (
         <header className="z-[100]">
-            <nav className="container w-full flex flex-row items-center justify-between z-[100] px-8 py-6 mx-auto">
+            <motion.nav initial={{opacity: 0, y: 100}} animate={{opacity: 1, y: 0}}
+                        transition={{duration: 1}}
+                        className="container w-full flex flex-row items-center justify-between z-[100] px-8 py-6 mx-auto">
                 <Link href="/">
                     <Image src="/logo.png" width={1100} height={234} alt="logo" className="w-auto h-[30px]"/>
                 </Link>
@@ -49,7 +52,7 @@ const Header = () => {
                         <AiOutlineMenu className="text-secondary text-2xl"/>
                     </button>
                 </div>
-            </nav>
+            </motion.nav>
 
             {/* Mobile menu, show/hide based on menu state. */}
             <div className={`relative z-50 ${isOpen ? "" : "hidden"} lg:hidden`}>
