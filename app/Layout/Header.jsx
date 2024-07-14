@@ -34,10 +34,10 @@ const Header = () => {
                                placeholder="Cappucino"/>
                         <BiSearch className="h-6 w-6 text-secondary absolute top-3.5 left-3"/>
                     </div>
-                    <div className="relative">
+                    <Link className="relative" href="/Contact">
                         <IoCartOutline className="text-[28px] text-secondary h-10 w-10"/>
                         <div className="absolute top-0 left-7 rounded-full w-4 h-4 border-white border-2 bg-primary"/>
-                    </div>
+                    </Link>
                 </div>
 
                 {/*gamburger menu*/}

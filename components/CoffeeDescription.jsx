@@ -2,6 +2,7 @@ import React from 'react';
 import Image from "next/image";
 import {IoCartOutline} from "react-icons/io5";
 import {FaStar} from "react-icons/fa";
+import Link from "next/link";
 
 const CoffeeDescription = ({photo, name, description, rating, views}) => {
     return (
@@ -16,10 +17,12 @@ const CoffeeDescription = ({photo, name, description, rating, views}) => {
                 </p>
                 <div className="w-full flex flex-row items-center justify-between">
                     <p className="text-[12px] sm:text-[14px] text-light w-[200px] font-semibold">{description}</p>
-                    <IoCartOutline className="bg-primary text-white rounded-full text-[38px] p-2"/>
+                    <Link href="/Contact">
+                        <IoCartOutline className="bg-primary text-white rounded-full text-[38px] p-2"/>
+                    </Link>
                 </div>
             </div>
-            <div className="absolute bottom-[7.9rem] right-[5rem] xs:right-[6.4rem] flex justify-center items-center h-full w-full">
+            <div className="absolute top-[2rem] left-[2rem] flex justify-center items-center h-auto w-auto">
                 <div className="bg-white bg-opacity-50 p-1 rounded-full backdrop-blur-sm">
                     <div
                         className="flex items-center gap-1 bg-white text-secondary rounded-full py-1 px-2.5 text-[14px] font-semibold">

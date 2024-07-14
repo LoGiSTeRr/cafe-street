@@ -1,5 +1,5 @@
 'use client'
-import React from 'react';
+import React, {useEffect} from 'react';
 import Image from 'next/image';
 import Layout from "@/app/Layout/Layout";
 import {IoCartOutline} from "react-icons/io5";
@@ -7,8 +7,22 @@ import {FaStar} from "react-icons/fa";
 import Coffee from "@/components/Coffee";
 import CoffeeDescription from "@/components/CoffeeDescription";
 import Feedback from "@/components/Feedback";
+import Link from "next/link";
 
 const HomePage = () => {
+    useEffect(() => {
+        document.querySelector('body').classList.add('scroll-smooth');
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    }, []);
     return (
         <Layout>
             <div className="flex flex-col items-center bg-[#F6EBDA] overflow-x-hidden">
@@ -23,12 +37,12 @@ const HomePage = () => {
                             Boost your productivity and build your mood with a glass of coffee in the morning
                         </p>
                         <div className="flex flex-row items-center gap-10 ">
-                            <div
+                            <Link href="/Contact"
                                 className="bg-secondary rounded-[20px] h-auto px-6 lg:px-10 py-3 flex flex-row items-center justify-center gap-3">
                                 <p className="font-bold text-[10px] lg:text-[14px]">Order now</p>
                                 <IoCartOutline className="bg-primary rounded-full text-[28px] p-1"/>
-                            </div>
-                            <p className="text-primary text-[10px] lg:text-[12px] font-bold">More Menu</p>
+                            </Link>
+                            <Link href="#menu" className="text-primary text-[10px] lg:text-[12px] font-bold">More Menu</Link>
                         </div>
                     </div>
                     <div className="relative bg-secondary rounded-full">
@@ -129,14 +143,14 @@ const HomePage = () => {
                                 delicious drinks. our main product is made with a
                                 secret recipe and available in stores worldwide.
                             </p>
-                            <div className="bg-secondary rounded-[20px] px-10 py-3 flex items-center"
+                            <Link href="/Contact" className="bg-secondary rounded-[20px] px-10 py-3 flex items-center"
                                  style={{width: 'fit-content'}}>
                                 <p className="font-bold text-[12px] text-primary">Get your coffee</p>
-                            </div>
+                            </Link>
                         </div>
                     </div>
                 </section>
-                <section className="bg-white w-full flex flex-col items-center px-24 py-20 gap-14">
+                <section id="menu" className="bg-white w-full flex flex-col items-center px-24 py-20 gap-14">
                     <p className="text-[28px] md:text-[36px] text-center md:text-start text-secondary font-semibold max-w-7xl mx-auto w-full">Special
                         menu <span
                             className="border-b-4 border-b-primary">for you</span></p>
@@ -198,10 +212,10 @@ const HomePage = () => {
                                 <input type="text"
                                        className="rounded-full px-4 py-3 lg:pr-48 pr-24 text-light"
                                        placeholder="Email address"/>
-                                <div
+                                <Link href="/Contact"
                                     className="text-secondary bg-secondary absolute top-1.5 right-1.5 py-2 px-5 rounded-full">
                                     <p className="text-white text-[14px] font-semibold">Order now</p>
-                                </div>
+                                </Link>
                             </div>
                         </div>
                     </div>
