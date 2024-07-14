@@ -42,7 +42,7 @@ const AboutUs = () => {
                         </div>
                     </motion.div>
                 </section>
-                <section ref={section2Ref}
+                <section
                          className="bg-[#F6EBDA] w-full h-full flex flex-wrap lg:flex-row items-center justify-center">
                     <div style={{
                         backgroundImage: `url(/cozy.jpg)`,
@@ -83,7 +83,7 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </section>
-                <section ref={section3Ref}
+                <section
                          className="bg-[#F6EBDA] w-full h-full">
                     <div
                         className="flex flex-col items-center justify-center gap-5 px-8 py-16 lg:py-24 pt-5 max-w-7xl mx-auto">
