@@ -26,7 +26,7 @@ const Contact = () => {
                 <section
                     className="bg-[#F6EBDA] w-full h-full flex flex-col items-center justify-between px-8 py-10 lg:py-12 pt-5 gap-10 max-w-7xl mx-auto">
                     <motion.div initial={{opacity: 0, y: 100}} animate={{opacity: 1, y: 0}}
-                                transition={{duration: 1}} className="w-full h-full flex flex-wrap gap-32 items-center justify-center py-16">
+                                transition={{duration: 1}} className="w-full h-full flex flex-wrap gap-20 items-center justify-center py-16">
                         <div
                             className="flex flex-col items-center justify-center text-secondary text-[16px] gap-2">
                             <FaMapLocation className="text-primary text-[50px]"/>
